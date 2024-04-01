@@ -225,7 +225,7 @@ def execute_task(started_cluster, task, cmd_options):
     copiers_exec_ids = []
 
     cmd = [
-        "/usr/bin/clickhouse",
+        "/usr/bin/clickhouse-library-bridge",
         "copier",
         "--config",
         "/etc/clickhouse-server/config-copier.xml",
